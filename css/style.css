@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+form h1 {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.shadow-1 {
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.lh-12 {
+    line-height: 1.2;
+}
+
+.lh-15 {
+    line-height: 1.5;
+}
+
+.float-r {
+    float: right;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout-index.css">
+    <link rel="stylesheet" href="css/passvalidation.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+    <title>Nautilus - Készítsd el alkotói profilodat</title>
+  </head>
+  <body>
+
+    <div class="page-wrapper">
+
+      <div class="background-modal background-modal-left"></div>
+      <div class="background-modal background-modal-right"></div>
+
+      <div class="page-modal shadow-1 border-radius-1">
+
+
+        <div class="page-modal__side-left p-8">
+          <img src="img/assets/logo.jpg"/>
+          <h1>Hozd létre alkotói profilodat</h1>
+        </div>
+
+
+
+        <div class="page-modal__side-right register-modal active p-8">
+
+          <form novalidate>
+
+            <h1>Regisztráció</h1>
+            <div class="group mt-8">
+              <input type="email" name="email" class="w-100" id="register-email" tabindex="2"
+                     pattern="[a-zA-Z0-9]*@[a-zA-Z]*\.[a-zA-Z]*"
+                     value=""
+                     required
+                     autofocus>
+              <span class="bar w-100"></span>
+              <label>Email cím</label>
+              <span class="error" aria-live="polite"></span>
+            </div>
+
+            <div class="group mt-8">
+              <input id="password" class="w-100" name="password" type="password" tabindex="3"
+                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                     oninvalid="setCustomValidity('Plz enter on Alphabets')"
+                     required>
+              <span class="bar w-100"></span>
+              <label>Jelszó</label>
+            </div>
+
+            <div style="width:100%;">
+              <div id="message" class="p-3">
+            	<p id="letter" class="invalid">Kisbetű</p>
+            	<p id="capital" class="invalid">Nagybetű</p>
+            	<p id="number" class="invalid">Szám</b></p>
+            	<p id="length" class="invalid">Minimum 8 karakter</b></p>
+            </div>
+          </div>
+
+            <div class="coloured mt-8">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" tabindex="4" required><span class="checkbox-material"><span class="check"></span></span>
+                  <span class="checkbox-text lh-15">Elfogadom az <a href="#"> Általános szerződési feltételeket</a> és az <a href="#">Adatkezelési Szabályzatot</a></span>
+                </label>
+              </div>
+            </div>
+
+
+            <input type="submit" value="Profil létrehozása" class="component__primary-cta position-flex-vc mt-8" tabindex="6">
+            <a href="#" class="text-c mt-3 login" id="loginfocus">Már van fiókom, belépek</a>
+
+          </form>
+        </div>
+
+
+
+
+        <div class="page-modal__side-right login-modal p-8">
+
+          <form>
+            <h1>Bejelentkezés</h1>
+            <div class="group mt-8">
+              <input type="text" class="w-100" id="login-email" tabindex="2" required>
+              <span class="bar w-100"></span>
+              <label>Email cím</label>
+            </div>
+
+            <div class="group mt-8">
+              <input type="password" class="w-100" tabindex="3" required>
+              <span class="bar w-100"></span>
+              <label>Jelszó</label>
+            </div>
+            <div class="mt-4"><a href="#" class="forgottenpass float-r">Jelszó visszaállítása</a></div>
+
+            <button class="component__primary-cta position-flex-vc mt-8" tabindex="6">Bejelentkezés</button>
+            <a href="#" class="text-c mt-3 register" id="registerfocus">Még nincs fiókom, regisztrálok</a>
+
+          </form>
+        </div>
+
+
+
+        <div class="page-modal__side-right forgottenpass-modal p-8">
+
+          <form>
+            <h1>Jelszó visszaállítása</h1>
+            <p class="mt-8">E-mail címedre küldünk egy linket, hogy úgy jelszót állíts profilodhoz.</p>
+            <div class="group mt-8">
+              <input type="text" class="w-100" tabindex="2" required>
+              <span class="bar w-100"></span>
+              <label>Email cím</label>
+            </div>
+            <div class="mt-3"><a href="#" class="login float-r">Vissza</a></div>
+
+            <button class="component__primary-cta position-flex-vc mt-8" tabindex="6">Jelszó visszaállítása</button>
+
+          </form>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <script type="text/jscript" src="js/visibility-toggle.js"></script>
+    <script type="text/jscript" src="js/focusnext.js"></script>
+    <script type="text/jscript" src="js/validator.js"></script>
+
+  </body>
+</html>

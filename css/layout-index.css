@@ -1,0 +1,90 @@
+.active {
+    display: flex !important;
+
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0.3; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0.3; }
+      to { opacity: 1; }
+}
+
+.page-wrapper {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-modal {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 50%;
+    height: 100vh;
+}
+
+.background-modal-left {
+    left: 0;
+}
+
+.background-modal-right {
+    right: 0;
+    opacity: 0.5;
+    background: url(https://img00.deviantart.net/5d58/i/2017/256/6/5/phoenix_nebula_by_aerroscape-dbnbath.jpg) center;
+    background-size: auto 1080px;
+}
+
+.page-modal {
+    width: 1120px;
+    height: 720px;
+
+    display: flex;
+
+    background: #ffffff;
+}
+
+.page-modal__side-left {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+
+    background: url(https://img00.deviantart.net/5d58/i/2017/256/6/5/phoenix_nebula_by_aerroscape-dbnbath.jpg) center;
+    background-size: auto 1080px;
+}
+
+.page-modal__side-right {
+    width: 50%;
+
+    display: none;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.page-modal__side-left img {
+    align-self: center;
+    width: 80px;
+    height: auto;
+}
+
+.position-flex-vc {
+    align-self: center;
+}
+
+.text-c {
+    text-align: center;
+}
+
+.border-radius-1 {
+    border-radius: 2px;
+}
